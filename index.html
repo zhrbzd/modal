@@ -8,25 +8,29 @@
 </head>
 <body>
     <button id="show">show form</button>
-    <div id="form_one" style="display: none">
+    <!-- step 1 -->
+    <div id="form-one" style="display: none">
         <form action="">
             <input type="text" placeholder="Yor name">
             <input type="radio" placeholder="Yor sex">
-            <button id="step-one" onload="next()">Next</button>
+            <button id="go-step-two" onload="go_step_two()">Next</button>
         </form>
     </div>
-    <div id="form_two" style="display: none">
+    <!-- step 2 -->
+    <div id="form-two" style="display: none">
         <form action="">
             <input type="date" placeholder="Your birthday">
             <input type="number" placeholder="Yor age">
-            <button class="prev">Prev</button>
-            <button id="step-two">Next</button>
+            <button id="return-step-one">Prev</button>
+            <button id="go-step-three">Next</button>
         </form>
     </div>
-    <div id="form_three" style="display: none">
+    <!-- step 3 -->
+    <div id="form-three" style="display: none">
         <form action="">
             <input type="email" placeholder="Your email">
             <input type="number" placeholder="Your phone number">
+            <button id="return-step-two">Prev</button>
             <button id="submit">submit</button>
         </form>
     </div>

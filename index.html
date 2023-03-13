@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="show">show form</button>
+    <div id="form_one" style="display: none">
+        <form action="">
+            <input type="text" placeholder="Yor name">
+            <input type="radio" placeholder="Yor sex">
+            <button id="step-one" onload="next()">Next</button>
+        </form>
+    </div>
+    <div id="form_two" style="display: none">
+        <form action="">
+            <input type="date" placeholder="Your birthday">
+            <input type="number" placeholder="Yor age">
+            <button class="prev">Prev</button>
+            <button id="step-two">Next</button>
+        </form>
+    </div>
+    <div id="form_three" style="display: none">
+        <form action="">
+            <input type="email" placeholder="Your email">
+            <input type="number" placeholder="Your phone number">
+            <button id="submit">submit</button>
+        </form>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

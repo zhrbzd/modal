@@ -1,5 +1,13 @@
 const show_btn = document.querySelector("#show"); // declare button that shows modal
-const body = document.querySelector("body")
+const close_btn = document.querySelector(".esc")
+
+// close button
+close_btn.addEventListener("click", e => {
+    form_one.style.display = "none"
+    form_two.style.display = "none"
+    form_three.style.display = "none"
+})
+
 // show button settings
 show_btn.addEventListener("click", e => {
     form_one.style.display = "block";

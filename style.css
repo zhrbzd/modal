@@ -7,6 +7,13 @@ body{
     text-align: center;
 }
 button:hover{cursor: pointer;}
+.esc{
+    padding-top: 0;
+    text-align: right;
+    margin-bottom: 12px;
+    color: #606060;
+}
+.esc:hover{cursor: pointer;}
 #show{
     background: rgb(255, 255, 255);
     border: none;
@@ -28,7 +35,7 @@ button:hover{cursor: pointer;}
 #form-one,
 #form-two,
 #form-three{
-    padding: 2rem 1rem;
+    padding: 1rem 2rem 3rem;
     background: white;
     width: 250px;
     height: 170px;
@@ -43,6 +50,7 @@ input{
     padding: .5rem;
     display: flex;
     margin-bottom: 1rem;
+    border: 1px solid black;
 }
 input[type="radio"]{
     width: 10%;

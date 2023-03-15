@@ -42,11 +42,14 @@ button:hover{cursor: pointer;}
     margin: 8% auto;
     border-radius: 10px;
 }
+#form-two,#form-three{
+    padding: 2rem;
+}
 label{
     display: flex
 }
 input{
-    width: 90%;
+    width: 92%;
     padding: .5rem;
     display: flex;
     margin-bottom: 1rem;

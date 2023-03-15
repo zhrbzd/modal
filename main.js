@@ -1,5 +1,5 @@
 const show_btn = document.querySelector("#show"); // declare button that shows modal
-
+const body = document.querySelector("body")
 // show button settings
 show_btn.addEventListener("click", e => {
     form_one.style.display = "block";
@@ -11,6 +11,7 @@ go_step_two.addEventListener("click", e => {
     e.preventDefault()
     form_one.style.display = "none";
     form_two.style.display = "block";
+    show_btn.readOnly = true;
 })
 
 // step 2

@@ -1,0 +1,75 @@
+body{
+    background-image: radial-gradient(rgb(147, 147, 255),rgb(165, 255, 165));
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow-y: hidden;
+    text-align: center;
+}
+button:hover{cursor: pointer;}
+#show{
+    background: rgb(255, 255, 255);
+    border: none;
+    color: rgb(72, 72, 255);
+    padding: 1rem 2rem 1.2rem;
+    font-weight: 600;
+    font-size: 22px;
+    border-radius: 10px;
+    margin-top: 3rem;
+    box-shadow: 3px 3px 10px rgb(72, 72, 255);
+}
+#show:hover{
+    background: rgb(70, 70, 155);
+    color: white;
+    cursor: pointer;
+    transition: .5s all;
+    box-shadow: 3px 3px 10px white;
+}
+#form-one,
+#form-two,
+#form-three{
+    padding: 2rem 1rem;
+    background: white;
+    width: 250px;
+    height: 170px;
+    margin: 8% auto;
+    border-radius: 10px;
+}
+label{
+    display: flex
+}
+input{
+    width: 90%;
+    padding: .5rem;
+    display: flex;
+    margin-bottom: 1rem;
+}
+input[type="radio"]{
+    width: 10%;
+}
+input:focus{
+    outline: none;
+}
+#go-step-two,
+#got-step-three,
+#submit{
+    width: 100%;
+    margin-top: 1rem;
+    border: none;
+    padding: 8px;
+    background: #a5fda6;
+}
+#return-step-one,
+#go-step-three{
+    border: none;
+    padding: 8px;
+    background: #a5fda6;
+    width: 40%;
+    margin: 39px 5px 0;
+}
+#return-step-two{
+    border: none;
+    padding: 8px;
+    background: #a5fda6;
+    width: 100%;
+}

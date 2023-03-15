@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>step by step form modal</title>
 </head>
 <body>
     <button id="show">show form</button>
     <!-- step 1 -->
     <div id="form-one" style="display: none">
         <form action="">
-            <input type="text" placeholder="Yor name">
-            <input type="radio" placeholder="Yor sex">
+            <input type="text" placeholder="Yor name" class="input">
+            <p class="not-valid" style="display:none"></p>
+            <label>men
+                <input type="radio">
+            </label>
+            <label>women
+                <input type="radio">
+            </label>
             <button id="go-step-two" onload="go_step_two()">Next</button>
         </form>
     </div>
@@ -28,8 +35,8 @@
     <!-- step 3 -->
     <div id="form-three" style="display: none">
         <form action="">
-            <input type="email" placeholder="Your email">
-            <input type="number" placeholder="Your phone number">
+            <input type="email" placeholder="Your email" required>
+            <input type="number" placeholder="Your phone number" required>
             <button id="return-step-two">Prev</button>
             <button id="submit">submit</button>
         </form>
